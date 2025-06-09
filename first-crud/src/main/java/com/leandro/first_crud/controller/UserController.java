@@ -23,7 +23,7 @@ public class UserController {
     public ResponseEntity<Users> findByEmail(@RequestParam String email){
         return ResponseEntity.ok(userService.findByEmail(email));
     }
-
+    /// Deletar dados do usuario do banco de dados
     @DeleteMapping
     public ResponseEntity<Void> deleteFindByEmail(@RequestParam String email){
         userService.deleteFindyByEmail(email);
